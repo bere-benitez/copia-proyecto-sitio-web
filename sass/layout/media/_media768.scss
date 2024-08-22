@@ -1,0 +1,75 @@
+@media (max-width:768px){
+
+    .header {
+        justify-content: center;
+        img {
+            width: 100%;
+            height: 3rem;
+        }
+        .navBar li{
+            font-size: .75rem;
+            font-family: "Roboto Slab";
+        }
+    } 
+    .seccionTituloUno h1{
+        word-spacing:1rem;
+        font-size: 1.375rem;
+    }
+    .seccionRecomendacionesDelMes {
+        background-image:url("../assets/img/backTablet1.png") ;
+        .containerCard1 {
+            width: 20rem;
+        }
+    }
+    .gridContainer {
+        @include grid(100%,repeat(4, 1fr),3rem 5rem 5rem 5rem 5rem 5rem 5rem,2rem,1rem,center,center,center);
+        h2 {
+            grid-column: 1 / 5; 
+        }
+        .img1grid {
+            grid-column: 1 / 3; 
+            grid-row: 2 / 5;    
+        }
+        .p1 {
+            grid-column: 3 / 5; 
+            grid-row: 2 / 3;
+            font-size: .875rem;    
+        }
+        .img2grid {
+            grid-column: 3 / 5; 
+            grid-row: 4/ 7;   
+        }
+        .img4grid {
+            grid-column: 2/ 3; 
+            grid-row: 4 / 6;  
+        }
+        .p2 {
+            grid-column: 1 / 3; 
+            grid-row: 6 / 8;
+            font-size: .875rem;
+        }
+        .img3grid {
+            grid-column: 3 / 4; 
+            grid-row: 5 / 8;   
+        }
+    }
+    .contenedorProximoDestino {
+        background-image: url("../assets/img/backTablett2.png");
+        .articuloCard {
+            width: 35rem;
+        }
+    }
+    .contedorAventura {
+        background-image: url("../assets/img/backTablet4.png");
+        .cardAventura {
+            width: 80%;
+            height: 100%;
+        }
+    }
+    .footer img {
+        width: 100%;
+        height: 2rem;
+    }
+}
+    
+    

@@ -1,0 +1,10 @@
+.seccionRegistrate{
+    background-image:url("../assets/img/back5.png") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include flex (column,none,center,center,1rem);
+    @include card (100%,100%,none,center,2rem,none,2rem);
+    .form{
+        @include flex (column,none,center,center,1rem);
+    }
+}

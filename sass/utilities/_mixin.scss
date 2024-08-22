@@ -1,0 +1,70 @@
+@mixin flex ($direction, $wrap, $justify, $align, $gap){
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+    
+}
+@mixin heading-1 {
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: normal;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+@mixin heading-2 {
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: normal;
+    color: #FFFFFF;
+    font-size: 1.375rem;
+    text-transform: capitalize;
+}
+
+@mixin heading-3 {
+    font-family: "Quicksand", sans-serif;
+    font-weight: bolder;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+}
+
+@mixin heading-4 {
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 1.125rem;
+}
+
+@mixin paragraph {
+    font-family: "Quicksand", sans-serif;
+    font-weight: normal;
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+@mixin card($width, $height,$border,$text-align,$padding,$margin,$line-height){
+    width:$width ;
+    height: $height;
+    border-radius: $border;
+    text-align:$text-align ;
+    padding:$padding ;
+    margin-block:margin ;
+    line-height:$line-height;
+}
+@mixin img($width, $height, $object-fit){
+    width: $width;
+    height: $height;
+    object-fit:$object-fit;
+}
+@mixin grid ($width,$column,$rows,$padding,$gap,$text-align,$justify,$align-items){
+    display: grid;
+    width: $width;
+    grid-template-columns: $column;
+    grid-template-rows: $rows;
+    padding: $padding;
+    gap:$gap;
+    text-align: $text-align;
+    justify-content: $justify;
+    align-items: $align-items;
+}

@@ -1,689 +1,498 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto+Slab:wght@100..900&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/*seccion del header-----------------------------------------------------------------------------------*/
-header {
-    background-image:url("../assets/img/backheader.png") ;
-    background-repeat: no-repeat;
-    background-size:cover;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; 
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    align-items: center;
-} 
-
-header img {
-    width: 100%;
-    height: 3.5rem;
-}
-
-.navBar ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.navBar a {
-    text-decoration:none;
-    color: #FFFFFF;
-}
-
-.navBar li{
-    list-style: none;
-    padding: .5rem;
-    border:none ;
-    border-radius: 1.25rem;
-    margin: .5rem;
-    background-color: #9E6003;
-    font-size: 1rem;
-    font-family: "Roboto Slab";
-}
-.navBar a:hover{
-    text-decoration:underline;
-}
-
-/*seccion del header-----------------------------------------------------------------------------------*/
-
-
-
-/*seccion footer-----------------------------------------------------------------------------------*/
-.seccionPieDePagina {
-    background-image:url("../assets/img/pie-de-pagina.png") ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; 
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    align-items: center;
-}
-
-footer img {
-    width: 100%;
-    height: 3rem;
-}
-
-.iconosRedesSociales {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.iconosRedesSociales li {
-    list-style: none;
-}
-/*seccion footer-----------------------------------------------------------------------------------*/
-
-
-
-/*titulo principal de cada pagina-----------------------------------------------------------------------------------*/
-.seccionTituloUno h1{
-    background-color: #376C16;
-    word-spacing:4rem;
-    text-align: center;
-    padding: .5rem;
-}
-.seccionTituloPrincipal h1{
-    background-color: #376C16;
-    text-align: center;
-    padding: .5rem;
-}
-/*titulo principal de cada pagina-----------------------------------------------------------------------------------*/
-
-
-
-/*caracteristicas de titulos y parrafos-----------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto+Slab:wght@100..900&display=swap");
 h1 {
-    font-family: "Roboto Slab", sans-serif;
-    font-weight:normal;
-    color: #FFFFFF;
-    font-size: 1.5rem;
-    text-transform:capitalize;
-}
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: normal;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  text-transform: capitalize; }
 
-h2{
-    font-family: "Roboto Slab" , sans-serif;
-    font-weight:normal;
-    color: #FFFFFF;
-    font-size: 1.375rem;
-    text-transform:capitalize;
-}
+h2 {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: normal;
+  color: #FFFFFF;
+  font-size: 1.375rem;
+  text-transform: capitalize; }
 
-h3{
-    font-family: "Quicksand", sans-serif;
-    font-weight:bolder;
-    color: #FFFFFF;
-    font-size: 1.25rem;
-}
+h3 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bolder;
+  color: #FFFFFF;
+  font-size: 1.25rem; }
 
 h4 {
-    font-family: "Quicksand", sans-serif;
-    font-weight:bold;
-    color: #FFFFFF;
-    font-size: 1.125rem;
-}
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  color: #FFFFFF;
+  font-size: 1.125rem; }
 
 p {
-    font-family: "Quicksand", sans-serif;
-    font-weight:normal;
-    color: #FFFFFF;
-    font-size: 1rem;
-}
-/*caracteristicas de titulos y parrafos-----------------------------------------------------------------*/
+  font-family: "Quicksand", sans-serif;
+  font-weight: normal;
+  color: #FFFFFF;
+  font-size: 1rem; }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-/*main Recomendaciones del Mes-----------------------------------------------------------------*/
-.seccionRecomendacionesDelMes {
-    background-image:url("../assets/img/back1.png") ;
-    background-repeat: no-repeat;
-    background-size: cover;
+.header {
+  background-image: url("../assets/img/backheader.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: none; }
+  .header img {
+    width: 100%;
+    height: 3.5rem; }
+  .header nav ul {
     display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    width: 100%;
-    height: 100%;
-    justify-content:center;
-    align-items: center;
-    gap: 2rem;
-    text-align: center;
-}
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: none;
+    gap: none; }
+    .header nav ul li {
+      list-style: none;
+      padding: .5rem;
+      border: none;
+      border-radius: 1.25rem;
+      margin: .5rem;
+      background-color: #9E6003;
+      font-size: 1rem;
+      font-family: "Roboto Slab"; }
+      .header nav ul li:hover {
+        transform: scale(1.2);
+        background-color: #376C16; }
+    .header nav ul a {
+      text-decoration: none;
+      color: #FFFFFF; }
+      .header nav ul a:hover {
+        text-decoration: underline; }
 
+.seccionTituloUno {
+  word-spacing: 4rem;
+  text-align: center;
+  padding: .5rem;
+  background-color: #376C16; }
 
-
-.containerCard1 {
-    width: 20rem;
-    height: 35rem;
-    background-color: #116D5D;
-    border-radius: .75rem;
-    text-align: left;
-    padding: 1rem;
-    margin-block: .5rem;
-    line-height: 2rem; /* espacio entre lineas de texto*/
-}
-
-.containerCard1 .imagenCard img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
+.seccionRecomendacionesDelMes {
+  background-image: url("../assets/img/back1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; }
 
 .containerCards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem; }
+
+.containerCard1 {
+  background-color: #116D5D;
+  width: 20rem;
+  height: 35rem;
+  border-radius: 0.75rem;
+  text-align: left;
+  padding: 1rem;
+  margin-block: margin;
+  line-height: 2rem; }
+  .containerCard1 img {
     width: 100%;
     height: 100%;
-    align-items: center;
-}
-/*main Recomendaciones del mes-----------------------------------------------------------------*/
+    object-fit: contain; }
 
-
-/*main Dato de la semana----------------------------------------------------------------------------*/
 .seccionDatoDeLaSemana {
+  background-color: #0C0C0C;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; }
+  .seccionDatoDeLaSemana .div2 {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: none; }
+    .seccionDatoDeLaSemana .div2 div {
+      width: 31.25rem; }
+      .seccionDatoDeLaSemana .div2 div img {
+        width: 100%;
+        object-fit: contain; }
+  .seccionDatoDeLaSemana .div3 {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+
+.gridContainer {
+  background-color: #0C0C0C;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 3rem 9rem 9rem 9rem 9rem 9rem 9rem;
+  padding: 2rem;
+  gap: 1rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center; }
+  .gridContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; }
+  .gridContainer h2 {
+    grid-column: 1/11; }
+  .gridContainer .img1grid {
+    grid-column: 1/5;
+    grid-row: 2/5; }
+    .gridContainer .img1grid:hover {
+      transform: scale(1.05); }
+  .gridContainer .p1 {
+    grid-column: 5/9;
+    grid-row: 2/3; }
+    .gridContainer .p1:hover {
+      transform: scale(1.05); }
+  .gridContainer .img2grid {
+    grid-column: 6/11;
+    grid-row: 3/7; }
+    .gridContainer .img2grid:hover {
+      transform: scale(1.05); }
+  .gridContainer .img4grid {
+    grid-column: 3/6;
+    grid-row: 4/6; }
+    .gridContainer .img4grid:hover {
+      transform: scale(1.05); }
+  .gridContainer .p2 {
+    grid-column: 1/5;
+    grid-row: 6/7; }
+    .gridContainer .p2:hover {
+      transform: scale(1.05); }
+  .gridContainer .img3grid {
+    grid-column: 6/9;
+    grid-row: 5/8; }
+    .gridContainer .img3grid:hover {
+      transform: scale(1.05); }
+
+.seccionTituloPrincipal h1 {
+  background-color: #376C16;
+  text-align: center;
+  padding: .5rem; }
+
+.contenedorProximoDestino {
+  background-image: url("../assets/img/backTuProximoDestino.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: none;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem; }
+  .contenedorProximoDestino .articuloCard {
     background-color: #0C0C0C;
     display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    width: 100%;
-    height: 100%;
-    justify-content:center ;
-    align-items: center;
-    text-align: center;
-    line-height: 2rem;
-    gap: 2rem;
-}
-
-.div2 {
-    display: flex;
+    flex-direction: none;
     flex-wrap: wrap;
-    width: 100%;
-    height: 100%;
     justify-content: space-evenly;
-    padding: 1rem;
     align-items: center;
-}
-
-.div2 div {
-    width: 31.25rem;
-}
-
-.div2 div img {
-    width: 100%;
-    object-fit: contain;
-}
-
-
-.div3 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-/*main Dato de la semana----------------------------------------------------------------------------*/
-/*main TRABAJANDO CON GRIDS----------------------------------------------------------------------------*/
-.gridContainer {
-    display: grid;
-    background-color:#0C0C0C;
-    width: 100%;
-    grid-template-columns: repeat(10,1fr);
-    grid-template-rows: 3rem 9rem 9rem 9rem 9rem 9rem 9rem;
-    padding: 2rem;
-    gap: 1rem;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-.gridContainer img {
-    width: 100%;
-    height: 100%;
-    object-fit:contain;
-}
-.gridContainer h2{
-    grid-column: 1/11;
-}
-.img1grid {
-    grid-column:1/5;
-    grid-row: 2/5;
-}
-.gridContainer .p1 {
-    grid-column:5/9;
-    grid-row: 2/3;
-}
-.img2grid{
-    grid-column:6/11;
-    grid-row: 3/7;
-}
-.img4grid{
-    grid-column:3/6;
-    grid-row: 4/6;
-}
-.gridContainer .p2 {
-    grid-column:1/5;
-    grid-row: 6/7;
-}
-.img3grid{
-    grid-column:6/9;
-    grid-row: 5/8;
-}
-
-/*main TU PROXIMO DESTINO----------------------------------------------------------------------------*/
-.contenedorProximoDestino {
-    background-image: url("../assets/img/backTuProximoDestino.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
-}
-
-.articuloCard {
-    display: flex;
-    flex-wrap: wrap;
+    gap: none;
     width: 30rem;
     height: 34.375rem;
-    justify-content: space-evenly;
-    padding: 1rem;
-    align-items: center;
-    background-color: #0C0C0C;
-    border-radius: .75rem;
-    text-align: left;
-    line-height: 2rem; /* espacio entre lineas de texto*/
-}
-
-.articuloCard img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.video2 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-/*main TU PROXIMO DESTINO----------------------------------------------------------------------------*/    
-
-
-
-/*main QUE SON LOS PUEBLOS MAGICOS----------------------------------------------------------------------------*/    
-.contenedorQueSonLosPueblosMagicos {
-    background-image: url("../assets/img/back3.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 1rem;
-    padding: 2rem;
-    line-height: 2rem;
-}
-
-.containerLogoPueblosMagicos {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 100%;
-    justify-content: space-evenly;
-    padding: 1rem;
-    align-items: center;
-}
-
-.containerLogoPueblosMagicos div {
-    width: 28.125rem;
-    text-align: left;
-}
-
-.containerLogoPueblosMagicos div img {
-    width: 100%;
-    object-fit: contain;
-}
-
-.containerLogoPueblosMagicos li {
-    list-style:inside;
-    color: #FFFFFF;
-    font-family: "Quicksand", sans-serif;
-    font-weight:normal;
-    color: #FFFFFF;
-    font-size: 1rem;
-}
-/*main QUE SON LOS PUEBLOS MAGICOS----------------------------------------------------------------------------*/ 
-
-/*main AVENTURA------------------------------------------------------------------------------------------------*/ 
-.contedorAventura {
-    background-image: url("../assets/img/back4.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    width: 100%;
-    height: 100%;
-    line-height: 2rem;
-    gap: 2rem;
-    align-items: center;
-    
-}
-.cardAventura {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 100%;
-    justify-content:space-evenly;
-    padding: 1rem;
-    align-items: center;
-    background-color:#116D5D;
     border-radius: 0.75rem;
-}
-.cardAventura div {
-    width: 31.25rem;
-}
-
-.cardAventura img {
-    object-fit: contain;
-    width: 100%;
-}
-
-.video3 {
+    text-align: left;
+    padding: 1rem;
+    margin-block: margin;
+    line-height: 2rem; }
+    .contenedorProximoDestino .articuloCard img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; }
+  .contenedorProximoDestino .video2 {
     width: 100%;
     display: flex;
-    justify-content: center;
-}
+    justify-content: center; }
 
+.contenedorQueSonLosPueblosMagicos {
+  background-image: url("../assets/img/back3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+  border-radius: none;
+  text-align: center;
+  padding: 2rem;
+  margin-block: margin;
+  line-height: 2rem; }
+  .contenedorQueSonLosPueblosMagicos .containerLogoPueblosMagicos {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: none; }
+    .contenedorQueSonLosPueblosMagicos .containerLogoPueblosMagicos div {
+      width: 28.125rem;
+      text-align: left; }
+    .contenedorQueSonLosPueblosMagicos .containerLogoPueblosMagicos img {
+      width: 100%;
+      height: none;
+      object-fit: contain; }
+    .contenedorQueSonLosPueblosMagicos .containerLogoPueblosMagicos li {
+      list-style: inside;
+      color: #FFFFFF;
+      font-family: "Quicksand", sans-serif;
+      font-weight: normal;
+      font-size: 1rem; }
 
+.contedorAventura {
+  background-image: url("../assets/img/back4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  height: 100%;
+  line-height: 2rem;
+  padding: 2rem; }
+  .contedorAventura .cardAventura {
+    display: flex;
+    flex-direction: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: none;
+    width: 100%;
+    height: 100%;
+    background-color: #116D5D;
+    border-radius: 0.75rem;
+    padding: 1rem; }
+    .contedorAventura .cardAventura div {
+      width: 31.25rem; }
+    .contedorAventura .cardAventura img {
+      width: 100%;
+      height: none;
+      object-fit: contain; }
+  .contedorAventura .video3 {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
 
-/*main AVENTURA------------------------------------------------------------------------------------------------*/ 
-
-
-/*main registrate------------------------------------------------------------------------------------------------*/ 
 .seccionRegistrate {
-    background-image:url("../assets/img/back5.png") ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
+  background-image: url("../assets/img/back5.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+  border-radius: none;
+  text-align: center;
+  padding: 2rem;
+  margin-block: margin;
+  line-height: 2rem; }
+  .seccionRegistrate .form {
     display: flex;
     flex-direction: column;
+    flex-wrap: none;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    gap: 1rem;
-    padding: 2rem;
-    line-height: 2rem;
-    }
+    gap: 1rem; }
 
-    .registrateForm {
+.footer {
+  background-image: url("../assets/img/pie-de-pagina.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: none; }
+  .footer img {
     width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 1rem;
-    padding: 2rem;
-    line-height: 2rem;
-    font-family: "Quicksand", sans-serif;
-    font-weight:bold;
-    color: #FFFFFF;
-    font-size: 1.125rem;
-    }
-
-
-    .navBarRegistrate a{
-    padding: .5rem;
-    border:none ;
-    border-radius: 1.25rem;
-    margin: .5rem;
-    background-color: #9E6003;
-    font-size: 1rem;
-    font-family: "Roboto Slab";
-    color: #FFFFFF;
-    list-style: none;
-    text-decoration: none;
-    }
-
-    .navBarRegistrate li{
-        list-style: none;
-    }
-.seccionheaderRegistrate{
+    height: 3rem; }
+  .footer .iconosRedesSociales {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; 
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    align-items: center;
-}
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: none;
+    gap: 2rem; }
+  .footer li {
+    list-style: none; }
 
+@media (max-width: 1024px) {
+  .seccionTituloUno {
+    word-spacing: 2rem; }
+  .containerCard1 {
+    width: 15rem; }
+  .seccionDatoDeLaSemana .div2 div {
+    width: 25rem; }
+  .footer img {
+    width: 100%;
+    height: 2.5rem; } }
 
-
-/*media queries-------------------------------------------------------------------------------*/
-@media (max-width:1024px){
-    .seccionTituloUno h1{
-        word-spacing:2rem;
-    }
-    .containerCard1 {
-        width: 15rem;
-    }
-    .div2 div {
-        width: 26.25rem;
-    }
-    .cardAventura div {
-        width: 25rem;
-    }
-    .articuloCard {
-        width: 25rem;
-        height: 34.375rem;
-    }
-    footer img {
-        width: 100%;
-        height: 2.5rem;
-    }
-    
-}
-
-
-@media (max-width:768px){
-
-    header {
-        justify-content: center;
-    } 
-    .seccionRecomendacionesDelMes {
-        background-image:url("../assets/img/backTablet1.png") ;
-    }
-    .seccionTituloUno h1{
-        word-spacing:1rem;
-        font-size: 1.375rem;
-    }
-    .containerCard1 {
-        width: 20rem;
-    }
-    header img {
-        width: 100%;
-        height: 3rem;
-    }
-    .navBar li{
-        font-size: .75rem;
-        font-family: "Roboto Slab";
-    }
-    footer img {
-        width: 100%;
-        height: 2rem;
-    }
-    .contenedorProximoDestino {
-        background-image: url("../assets/img/backTablett2.png");
-    }
-    .articuloCard {
-        display: flex;
-        flex-wrap: wrap;
-        width: 35rem;
-    }
-    .contedorAventura {
-        background-image: url("../assets/img/backTablet4.png");
-    }
-
-    .cardAventura {
-        display: flex;
-        flex-wrap: wrap;
-        width: 80%;
-        height: 100%;
-    }
-
-
-    .gridContainer {
-        display: grid;
-        background-color:#0C0C0C;
-        width: 100%;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: 3rem 5rem 5rem 5rem 5rem 5rem 5rem;
-        padding: 2rem;
-        gap: 1rem;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-    .gridContainer img {
-        width: 100%;
-        height: 100%;
-        object-fit:contain;
-    }
-    .gridContainer h2{
-        grid-column: 1/5;
-    }
-    .img1grid {
-        grid-column:1/3;
-        grid-row: 2/5;
-    }
+@media (max-width: 768px) {
+  .header {
+    justify-content: center; }
+    .header img {
+      width: 100%;
+      height: 3rem; }
+    .header .navBar li {
+      font-size: .75rem;
+      font-family: "Roboto Slab"; }
+  .seccionTituloUno h1 {
+    word-spacing: 1rem;
+    font-size: 1.375rem; }
+  .seccionRecomendacionesDelMes {
+    background-image: url("../assets/img/backTablet1.png"); }
+    .seccionRecomendacionesDelMes .containerCard1 {
+      width: 20rem; }
+  .gridContainer {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 3rem 5rem 5rem 5rem 5rem 5rem 5rem;
+    padding: 2rem;
+    gap: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center; }
+    .gridContainer h2 {
+      grid-column: 1 / 5; }
+    .gridContainer .img1grid {
+      grid-column: 1 / 3;
+      grid-row: 2 / 5; }
     .gridContainer .p1 {
-        grid-column:3/5;
-        grid-row: 2/3;
-        font-size: .875rem;
-    }
-    .img2grid{
-        grid-column:3/5;
-        grid-row: 4/7;
-    }
-    .img4grid{
-        grid-column:2/3;
-        grid-row: 4/6;
-    }
+      grid-column: 3 / 5;
+      grid-row: 2 / 3;
+      font-size: .875rem; }
+    .gridContainer .img2grid {
+      grid-column: 3 / 5;
+      grid-row: 4/ 7; }
+    .gridContainer .img4grid {
+      grid-column: 2/ 3;
+      grid-row: 4 / 6; }
     .gridContainer .p2 {
-        grid-column:1/3;
-        grid-row: 6/8;
-        font-size: .875rem;
-    }
-    .img3grid{
-        grid-column:3/4;
-        grid-row: 5/8;
-    }
+      grid-column: 1 / 3;
+      grid-row: 6 / 8;
+      font-size: .875rem; }
+    .gridContainer .img3grid {
+      grid-column: 3 / 4;
+      grid-row: 5 / 8; }
+  .contenedorProximoDestino {
+    background-image: url("../assets/img/backTablett2.png"); }
+    .contenedorProximoDestino .articuloCard {
+      width: 35rem; }
+  .contedorAventura {
+    background-image: url("../assets/img/backTablet4.png"); }
+    .contedorAventura .cardAventura {
+      width: 80%;
+      height: 100%; }
+  .footer img {
+    width: 100%;
+    height: 2rem; } }
 
-
-
-}
-
-@media (max-width:425px){
-    header img {
-        width: 100%;
-        height: 2.5rem;
-    }
-    h1 {
-        font-size: 1.375rem;
-    }
-    
-    h2{
-        font-size: 1.25rem;
-    }
-    
-    h3{
-        font-size: 1.125rem;
-    }
-    
-    h4 {
-        font-size: 1rem;
-    }
-    .articuloCard {
-        display: flex;
-        flex-wrap: wrap;
-        width: 80%;
-        height: 100%;
-    }
-
-    .gridContainer {
-        display: grid;
-        background-color:#0C0C0C;
-        width: 100%;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: 3rem 5rem 5rem 5rem 5rem 5rem 5rem 5rem;
-        padding: 2rem;
-        gap: 1rem;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-    .gridContainer img {
-        width: 100%;
-        height: 100%;
-        object-fit:contain;
-    }
-    .gridContainer h2{
-        grid-column: 1/3;
-    }
-    .img1grid {
-        grid-column:1/2;
-        grid-row: 2/4;
-    }
+@media (max-width: 425px) {
+  h1 {
+    font-size: 1.25rem; }
+  h2 {
+    font-size: 1.125rem; }
+  h3 {
+    font-size: 1rem; }
+  h4 {
+    font-size: 1rem; }
+  p {
+    font-size: 1rem; }
+  .header img {
+    height: 2.5rem; }
+  .gridContainer {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 3rem 5rem 5rem 5rem 5rem 5rem 5rem 5rem;
+    padding: 2rem;
+    gap: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center; }
+    .gridContainer h2 {
+      grid-column: 1 / 3;
+      font-size: 1.25rem; }
+    .gridContainer .img1grid {
+      grid-column: 1 / 2;
+      grid-row: 2 / 4; }
     .gridContainer .p1 {
-        grid-column:2/3;
-        grid-row: 2/3;
-        font-size: .75rem;
-    }
-    .img2grid{
-        grid-column:2/3;
-        grid-row: 3/6;
-    }
-    .img4grid{
-        grid-column:1/2;
-        grid-row: 5/7;
-    }
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      font-size: .75rem; }
+    .gridContainer .img2grid {
+      grid-column: 2/ 3;
+      grid-row: 3/ 6; }
+    .gridContainer .img4grid {
+      grid-column: 1/ 2;
+      grid-row: 5/ 7; }
     .gridContainer .p2 {
-        grid-column:1/2;
-        grid-row: 7/8;
-        font-size: .75rem;
-    }
-    .img3grid{
-        grid-column:2/3;
-        grid-row: 7/9;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
+      grid-column: 1 / 2;
+      grid-row: 7 / 8;
+      font-size: .75rem; }
+    .gridContainer .img3grid {
+      grid-column: 2/3;
+      grid-row: 7/ 9; }
+  .contenedorProximoDestino .articuloCard {
+    width: 20rem;
+    height: 100%;
+    border-radius: 0.75rem;
+    text-align: left;
+    padding: 1rem;
+    margin-block: margin;
+    line-height: 2rem; } }

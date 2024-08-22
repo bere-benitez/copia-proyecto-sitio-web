@@ -1,0 +1,27 @@
+.contenedorQueSonLosPueblosMagicos {
+    background-image: url("../assets/img/back3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include flex(column,none,center,center,1rem);
+    @include card(100%,100%,none,center,2rem,none,2rem);
+    .containerLogoPueblosMagicos {
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+        @include flex(none, wrap,space-evenly,center,none);
+        div {
+            width: 28.125rem;
+            text-align: left;
+        }
+        img{
+            @include img(100%,none,contain);
+        }
+        li {
+            list-style:inside;
+            color: map-get($colores, color6);
+            font-family: "Quicksand", sans-serif;
+            font-weight:normal;
+            font-size: map-get($tamanoFuente,pa);
+        }
+    }
+}

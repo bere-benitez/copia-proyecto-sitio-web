@@ -1,0 +1,22 @@
+@import "./utilities/funciones";
+@import "./utilities/maps";
+@import "./utilities/mixin";
+@import "./utilities/variables";
+
+@import "./base/fuentes";
+@import "./base/reset";
+
+@import "./layout/header";
+@import "./layout/mainIndex";
+@import "./layout/mainTuProximoDestino";
+@import "./layout/mainQueSonLosPueblosMagicos";
+@import "./layout/mainAventura";
+@import "./layout/mainRegistrate";
+@import "./layout/footer";
+
+@import "./components/cards";
+@import "./components/navBar";
+
+@import "./layout/media/media1024";
+@import "./layout/media/media768";
+@import "./layout/media/media425";

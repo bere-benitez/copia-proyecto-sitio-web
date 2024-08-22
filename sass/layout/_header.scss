@@ -1,0 +1,36 @@
+.header {
+    background-image:url("../assets/img/backheader.png") ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding: 1rem 2rem;
+    @include flex(row,wrap,space-between,center,none);
+    img {
+        width: 100%;
+        height: 3.5rem;
+    }
+    nav ul{
+        @include flex(row,wrap,center,none,none);
+        li {
+            list-style: none;
+            padding: .5rem;
+            border:none ;
+            border-radius: 1.25rem;
+            margin: .5rem;
+            background-color: map-get($colores ,color2);
+            font-size: map-get($tamanoFuente, pa);
+            font-family: "Roboto Slab";
+            &:hover{
+                transform: scale(1.2);
+                background-color: map-get($colores, color4 );
+            }
+        }
+        a{
+            text-decoration:none;
+            color: #FFFFFF;
+            &:hover{
+                text-decoration:underline;
+                
+            }
+        }
+    }
+}

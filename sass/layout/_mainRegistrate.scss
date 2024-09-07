@@ -1,10 +1,35 @@
-.seccionRegistrate{
+.bodyForm{
     background-image:url("../assets/img/back5.png") ;
     background-repeat: no-repeat;
     background-size: cover;
-    @include flex (column,none,center,center,1rem);
-    @include card (100%,100%,none,center,2rem,none,2rem);
+    display: flex;
+    justify-content: center;
+    @include paragraph;
     .form{
-        @include flex (column,none,center,center,1rem);
+        background-color: map-get($colores, color2);
+        width: 90%;
+        max-width: 25rem;
+        padding:1rem 2rem;
+        border-radius: .625rem;
+        margin: 2rem;
+        text-align: center;
+        h3{
+            margin-bottom: 1rem;
+        }
+        .formContainer{
+            margin-top: 2rem;
+            display: grid;
+            gap: 2rem;
+            .formGroup{
+                position: relative;
+                input{
+                    width: 100%;
+                    padding: .5rem;
+                    border: none;
+                    outline: none;
+                }
+            }
+        }
     }
+    
 }

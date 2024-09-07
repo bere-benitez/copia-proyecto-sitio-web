@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta property="og:title" content=Registrate>
+    <meta property="og:site_name" content=Puebleando Por México Blog >
+    <meta property="og:url" content=www.PuebleandoPorMexico.com>
+    <meta property="og:description" content=Regístrate para enterarte de nuevos destinos>
+    <meta property="og:type" content=website>
+    <meta property="og:image" content=file:///C:/Users/bereb/OneDrive/Escritorio/copia-proyecto/assets/img/logo-pueblos-magicos.png>
+    <meta name="author" content="Brenda Benítez">
+    <title>Registrate</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
     <body>
         <header class="header">
             <div>
-                <img src="../assets/img/logo.png">
+                <img src="../assets/img/logo.png" alt="Logo Puebleando Por México Blog"> 
             </div>
             <nav class="navBarRegistrate">
                 <ul class="d-flex justify-content-center gap-3">
@@ -25,30 +32,42 @@
             <section class="seccionTituloPrincipal">
                 <h1>Registrate</h1>
             </section>
-            <section class="seccionRegistrate">
-                <div>
-                    <h2>Uneta a nuestra página para recibir las notificaciones de nuevas actualizaciones de destinos, noticias y nuevas aventuras a tu correo</h2>
-                </div>
-                <div class="form">
-                    <form action="" class="registrateForm">
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre">
-                        <label for="correo">Correo electónico:</label>
-                        <input type="text" id="correo" name="correo" required placeholder="Ingresa tu correo electrónico">
-                        <label for="pais">País de origen:</label>
-                        <input type="text" id="pais" name="pais" required placeholder="Ingresa tu pais de origen">
-                        <label for="nacimiento">Fecha de nacimiento:</label>
-                        <input type="date" id="nacimiento" name="nacimiento">
-                        <label for="text">Dinos de que Pueblo Mágico te gustaría descubir nueva información:</label>
-                        <textarea name="comentarios" id="text" rows="5" cols="20"></textarea>
-                        <input type="submit" value="Unirme">
-                    </form>
-                </div>
-            </section>
+            <section class="bodyForm">
+                <form action="" class="form">
+                    <h3>Unete a nuestra comunidad</h3>
+                    <div class="formContainer">
+                        <div class="formGroup">
+                            <input type="text" id="nombre" name="nombre" placeholder=" ">
+                            <label for="nombre">Nombre de usuario:</label>
+                            <span class="formLine"></span>
+                        </div>   
+                        <div class="formGroup">
+                            <input type="text" id="correo" name="correo" placeholder=" ">
+                            <label for="nombre">Correo electronico:</label>
+                            <span class="formLine"></span>
+                        </div>
+                        <div class="formGroup">
+                            <input type="text" id="pais" name="pais" placeholder=" ">
+                            <label for="nombre">Pais de origen:</label>
+                            <span class="formLine"></span>
+                        </div>
+                        <div class="formGroup">
+                            <input type="date" id="nacimiento" name="nacimiento" placeholder=" ">
+                            <label for="nacimiento">Fecha de nacimiento:</label>
+                            <span class="formLine"></span>
+                        </div>
+                        <div class="formGroup"></div>
+                            <label for="text">Dinos de que lugar de México te gustaría descubir nueva información:</label>
+                            <textarea name="comentarios" id="text" rows="5" cols="20"></textarea>
+                        </div>
+                            <input type="submit" class="formSubmin" value="Unirme">
+                    </div>
+                </form>
+        </section>
         </main>
         <footer class="footer">
             <div>
-                <img src="../assets/img/logofooter.png">
+                <img src="../assets/img/logofooter.png" alt="Logo Puebleando Por México Blog">
             </div>
             <div>
                 <ul class="iconosRedesSociales">
